@@ -1,0 +1,135 @@
+/* ================= DARK THEME ================= */
+
+:root {
+  --bg-primary: #030712;
+  --bg-secondary: #111827;
+  --bg-card: #1f2937;
+
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+
+  --border-color: #374151;
+
+  --blue: #3b82f6;
+  --green: #22c55e;
+  --red: #ef4444;
+  --yellow: #f59e0b;
+  --purple: #8b5cf6;
+  --pink: #ec4899;
+}
+
+/* ================= LIGHT THEME ================= */
+
+.light-theme {
+  --bg-primary: #f9fafb;
+  --bg-secondary: #ffffff;
+  --bg-card: #f3f4f6;
+
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+
+  --border-color: #d1d5db;
+}
+
+/* ================= BACKGROUNDS ================= */
+
+.bg-primary {
+  background: var(--bg-primary);
+}
+
+.bg-secondary {
+  background: var(--bg-secondary);
+}
+
+.bg-card {
+  background: var(--bg-card);
+}
+
+/* ================= TEXT ================= */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* ================= BORDERS ================= */
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+/* ================= BUTTON COLORS ================= */
+
+.btn-blue {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+
+.btn-red {
+  background: var(--red);
+  color: white;
+}
+
+.btn-purple {
+  background: var(--purple);
+  color: white;
+}
+
+/* ================= HOVER ================= */
+
+.btn-blue:hover,
+.btn-green:hover,
+.btn-red:hover,
+.btn-purple:hover {
+  filter: brightness(1.1);
+}
+
+/* ================= CARDS ================= */
+
+.theme-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+/* ================= GRADIENTS ================= */
+
+.gradient-blue {
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #3b82f6
+  );
+}
+
+.gradient-purple {
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #a855f7
+  );
+}
+
+.gradient-green {
+  background: linear-gradient(
+    to right,
+    #16a34a,
+    #22c55e
+  );
+}
+
+.gradient-orange {
+  background: linear-gradient(
+    to right,
+    #ea580c,
+    #f59e0b
+  );
+}
