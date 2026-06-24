@@ -12,10 +12,13 @@ export const initializeSocket =
 
     cors: {
 
-      origin: [
-        "http://localhost:5173",
-        process.env.FRONTEND_URL,
-      ],
+      cors: {
+  origin: [
+    "https://linkzipcom.vercel.app",
+    process.env.FRONTEND_URL
+  ],
+  credentials: true
+},
 
       methods: [
         "GET",
