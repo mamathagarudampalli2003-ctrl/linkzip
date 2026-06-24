@@ -653,7 +653,7 @@ if (
 await Team.findById(teamId);
 
 const inviteLink =
-`http://localhost:5173/invite/${invite.token}`;
+`https://linkzipcom.vercel.app//invite/${invite.token}`;
 
 await sendInvitationEmail(
   email,

@@ -59,7 +59,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://linkzipcom.vercel.app/",
+    origin: "https://linkzipcom.vercel.app",
     credentials: true,
   })
 );

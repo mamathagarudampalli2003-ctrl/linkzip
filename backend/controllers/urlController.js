@@ -400,7 +400,7 @@ if (url) {
   if (!dbUrl) {
 
     return res.redirect(
-      "http://localhost:5173/not-found"
+      "https://linkzipcom.vercel.app//not-found"
     );
 
   }
@@ -420,12 +420,12 @@ if (url) {
 
     // ❌ If not found → redirect to frontend safe page
     if (!url) {
-      return res.redirect("http://localhost:5173/not-found");
+      return res.redirect("https://linkzipcom.vercel.app//not-found");
     }
 
     // ❌ If disabled
     if (url.status === "disabled") {
-      return res.redirect("http://localhost:5173/disabled");
+      return res.redirect("https://linkzipcom.vercel.app//disabled");
     }
 
     // PASSWORD PROTECTION
@@ -441,7 +441,7 @@ if (url.password) {
   ) {
 
     return res.redirect(
-      `http://localhost:5173/protected/${shortId}`
+      `https://linkzipcom.vercel.app//protected/${shortId}`
     );
   }
 }
@@ -465,7 +465,7 @@ await redisClient.del(
 );
 
   return res.redirect(
-    "http://localhost:5173/expired"
+    "https://linkzipcom.vercel.app//expired"
   );
 }
 
@@ -770,7 +770,7 @@ await Url.updateOne(
   } catch (error) {
     console.log("REDIRECT ERROR:", error);
 
-    return res.redirect("http://localhost:5173/error");
+    return res.redirect("https://linkzipcom.vercel.app//error");
   }
 };
 
@@ -790,7 +790,7 @@ export const qrRedirect =
       if (!url) {
 
         return res.redirect(
-          "http://localhost:5173/not-found"
+          "https://linkzipcom.vercel.app//not-found"
         );
       }
 
@@ -854,7 +854,7 @@ export const qrRedirect =
       console.log(err);
 
       return res.redirect(
-        "http://localhost:5173/error"
+        "https://linkzipcom.vercel.app//error"
       );
     }
   };

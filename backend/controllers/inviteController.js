@@ -42,7 +42,7 @@ export const sendInvite = async (req, res) => {
 
     await invite.save();
 
-    const inviteLink = `http://localhost:5173/invite/${token}`;
+    const inviteLink = `https://linkzipcom.vercel.app//invite/${token}`;
 
     res.json({
       message: "Invite created",
