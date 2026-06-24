@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -70,6 +70,70 @@ export default function Landing() {
         {/* Glow */}
         <div className="absolute w-[500px] h-[500px] bg-blue-500 opacity-20 blur-3xl rounded-full top-10 left-1/2 -translate-x-1/2"></div>
       </div>
+
+      <div className="py-12 px-6">
+
+  <div
+    className="
+      max-w-6xl
+      mx-auto
+      grid
+      md:grid-cols-4
+      gap-6
+    "
+  >
+
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+
+      <h3 className="text-3xl font-bold text-blue-400">
+        AI
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        Smart Routing
+      </p>
+
+    </div>
+
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+
+      <h3 className="text-3xl font-bold text-green-400">
+        Real-Time
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        Analytics
+      </p>
+
+    </div>
+
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+
+      <h3 className="text-3xl font-bold text-purple-400">
+        Teams
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        Collaboration
+      </p>
+
+    </div>
+
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+
+      <h3 className="text-3xl font-bold text-orange-400">
+        SaaS
+      </h3>
+
+      <p className="text-gray-400 mt-2">
+        Production Ready
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
 
       {/* PROBLEM → SOLUTION */}
       <div className="py-20 px-6 text-center">
@@ -208,16 +272,85 @@ export default function Landing() {
       </div>
 
       {/* FOOTER */}
-      <div className="text-center py-6 text-gray-400 text-sm space-y-2">
-        <p>© 2026 LinkZip. Built with ❤️</p>
+      {/* FOOTER */}
 
-        <div className="space-x-4">
-          <span className="hover:text-white cursor-pointer">Privacy</span>
-          <span className="hover:text-white cursor-pointer">Terms</span>
-          <span className="hover:text-white cursor-pointer">Contact</span>
-        </div>
-      </div>
+<div
+  className="
+    border-t
+    border-white/10
+    py-10
+    px-6
+  "
+>
+
+  <div
+    className="
+      max-w-6xl
+      mx-auto
+      flex
+      flex-col
+      md:flex-row
+      justify-between
+      items-center
+      gap-6
+    "
+  >
+
+    <div>
+
+      <h2 className="text-xl font-bold text-blue-400">
+        LinkZip 🚀
+      </h2>
+
+      <p className="text-gray-400 mt-2">
+        AI Smart Link Routing Platform
+      </p>
 
     </div>
-  );
-}
+
+    <div
+      className="
+        flex
+        gap-6
+      "
+    >
+
+      <Link
+        to="/privacy"
+        className="text-gray-400 hover:text-white"
+      >
+        Privacy Policy
+      </Link>
+
+      <Link
+        to="/terms"
+        className="text-gray-400 hover:text-white"
+      >
+        Terms of Service
+      </Link>
+
+      <Link
+        to="/contact"
+        className="text-gray-400 hover:text-white"
+      >
+        Contact
+      </Link>
+
+    </div>
+
+  </div>
+
+  <p
+    className="
+      text-center
+      text-gray-500
+      mt-8
+      text-sm
+    "
+  >
+    © 2026 LinkZip. All rights reserved.
+  </p>
+
+</div>
+</div>
+  )};

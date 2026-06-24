@@ -14,6 +14,9 @@ import ExpiredPage from"./pages/ExpiredPage";
 import ProtectedLinkPage from "./pages/ProtectedLinkPage";
 import PublicAnalytics from "./pages/PublicAnalytics";
 import AcceptInvite from "./pages/AcceptInvite";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Contact from "./pages/Contact";
 
 // ================= DASHBOARD =================
 
@@ -132,6 +135,21 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route
+ path="/privacy"
+ element={<PrivacyPolicy />}
+/>
+
+<Route
+ path="/terms"
+ element={<TermsOfService />}
+/>
+
+<Route
+ path="/contact"
+ element={<Contact />}
+/>
 
         {/* ================= 404 PAGE ================= */}
 
