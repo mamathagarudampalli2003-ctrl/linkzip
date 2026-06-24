@@ -168,7 +168,7 @@ export default function Landing() {
 
             <img
               src="/dashboard-preview.png"
-              alt="Dashboard Preview"
+              alt="LinkZip Dashboard"
               className="relative rounded-2xl shadow-2xl border border-gray-700 group-hover:scale-105 transition duration-500"
             />
 
