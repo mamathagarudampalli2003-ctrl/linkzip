@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:8000/api/invoice";
+  "https://linkzip-0w52.onrender.com/api/invoice";
 
 export const downloadInvoice =
   async (token) => {

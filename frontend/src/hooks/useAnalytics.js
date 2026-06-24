@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://localhost:8000");
+const socket = io("https://linkzip-0w52.onrender.com");
 
 export default function useAnalytics() {
   const [analytics, setAnalytics] = useState(null);
@@ -17,7 +17,7 @@ export default function useAnalytics() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:8000/api/analytics/dashboard",
+        "https://linkzip-0w52.onrender.com/api/analytics/dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,

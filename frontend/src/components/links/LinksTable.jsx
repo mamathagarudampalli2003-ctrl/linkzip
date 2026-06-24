@@ -19,7 +19,7 @@ export default function LinksTable({
 
   const openShortUrl = (shortId) => {
   const shortUrl =
-    `http://localhost:8000/api/url/r/${shortId}`;
+    `https://linkzip-0w52.onrender.com/api/url/r/${shortId}`;
 
   window.open(shortUrl, "_blank");
 };
@@ -72,7 +72,7 @@ export default function LinksTable({
         {filteredUrls.map((item) => {
 
           const shortUrl =
-            `http://localhost:8000/api/url/r/${item.shortId}`;
+            `https://linkzip-0w52.onrender.com/api/url/r/${item.shortId}`;
 
           return (
             <div

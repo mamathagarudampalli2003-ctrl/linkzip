@@ -74,7 +74,7 @@ export default function LinksTable({
           {filteredUrls.map((item) => {
 
             const shortUrl =
-              `http://localhost:8000/api/url/r/${item.shortId}`;
+              `https://linkzip-0w52.onrender.com/api/url/r/${item.shortId}`;
 
             return (
 

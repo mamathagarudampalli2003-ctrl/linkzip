@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:8000/api";
+const API = "https://linkzip-0w52.onrender.com";
 
 const getConfig = () => {
   const token = localStorage.getItem("token");

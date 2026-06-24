@@ -3,7 +3,7 @@ import axios from "axios";
 // ================= API INSTANCE =================
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://linkzip-0w52.onrender.com/api",
 });
 
 // ================= TOKEN =================

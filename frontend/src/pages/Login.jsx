@@ -20,7 +20,7 @@ export default function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://linkzip-0w52.onrender.com/api/auth/login",
         {
           email,
           password,
@@ -54,7 +54,7 @@ export default function Login() {
       // later integrate real Google OAuth token
       // for now mock structure
       const res = await axios.post(
-        "http://localhost:8000/api/auth/google",
+        "https://linkzip-0w52.onrender.com/api/auth/google",
         {
           name: "Google User",
           email: "googleuser@gmail.com",
