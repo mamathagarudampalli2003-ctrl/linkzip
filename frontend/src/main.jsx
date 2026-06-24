@@ -12,6 +12,11 @@ from "./context/AuthContext";
 const GOOGLE_CLIENT_ID =
 import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
+import posthog from './lib/posthog'
+
+// Track first page load
+posthog.capture('$pageview')
+
 ReactDOM.createRoot(
 document.getElementById("root")
 ).render(
